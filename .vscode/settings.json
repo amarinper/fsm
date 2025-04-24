@@ -1,11 +1,5 @@
 {
-    "ceedlingExplorer.problemMatching": {
-        "mode": "gcc"
-    },
-    "ceedlingExplorer.debugConfiguration": "Ceedling - Debug test",
-    "ceedlingExplorer.prettyTestLabel": true,
-    "ceedlingExplorer.projectPath": "./ceedling",
-    "files.associations": {
-        "fsm.h": "c"
-    },
+    "idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "ceedlingExplorer.projectPath": "/Users/antoniomarinperez/Documents/repositorio/fsm/ceedling"
+    
 }
