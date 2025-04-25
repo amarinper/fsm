@@ -1,0 +1,14 @@
+Failed to find the project.yml file. Please check the ceedlingExplorer.projectPath option.
+
+
+Stacktrace: 
+	at S.syncTopLevel (/Users/antoniomarinperez/.vscode/extensions/ms-vscode.test-adapter-converter-0.2.1/out/extension.js:6:3)
+	at Ah.value (/Users/antoniomarinperez/.vscode/extensions/ms-vscode.test-adapter-converter-0.2.1/out/extension.js:3:4541)
+	at D.B (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at Ah.value (/Users/antoniomarinperez/.vscode/extensions/hbenl.vscode-test-explorer-2.22.1/out/hub/testHub.js:53:43)
+	at D.B (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.C (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2445)
+	at D.fire (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2662)
+	at yr.load (/Users/antoniomarinperez/.vscode/extensions/numaru.vscode-ceedling-test-adapter-1.12.0/out/src/main.js:43:2974)
+	at async cb.$refreshTests (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:71748)
