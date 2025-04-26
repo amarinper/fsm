@@ -8,6 +8,6 @@ bool is_true2(fsm_t *fsm);
 void do_nothing(fsm_t* f);
 
 void* fsm_malloc(size_t s);
-void fsm_free(void*);
+void fsm_free(void* p);
 
 #endif

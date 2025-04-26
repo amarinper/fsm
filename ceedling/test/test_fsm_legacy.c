@@ -264,19 +264,22 @@ void test_fsm_fire_checkFunctionIsCalledAndResultIsImportantForTransition(bool r
  *
  */
 void test_fsm_new_nullWhenFsmMallocReturnsNull(void)
-{
-    fsm_trans_t tt[] = {
-        {0, is_true, 1, NULL},
-        {1, is_true, 0, NULL},
-        {-1, NULL, -1, NULL}
-    };
-    fsm_malloc_ExpectAndReturn(sizeof(fsm_t), NULL);
 
-    fsm_t *f = fsm_new(tt);
-//---------------------------------------------------------------------------------------------
-    TEST_ASSERT_NULL(f);
+    {
+        fsm_trans_t tt[] = {
+            {0, is_true, 1, NULL},
+            {-1, NULL, -1, NULL}
+        };
+    
+        // Simula que fsm_malloc falla (devuelve NULL)
+        fsm_malloc_ExpectAndReturn(sizeof(fsm_t), NULL);
+    
+        fsm_t *f = fsm_new(tt);
+    
+        TEST_ASSERT_NULL(f);  // Confirma que fsm_new falla al no poder reservar
     //TEST_IGNORE();
 }
+
 
 /**
  * @brief Llamar a fsm_destroy provoca una llamada a fsm_free
@@ -285,7 +288,11 @@ void test_fsm_new_nullWhenFsmMallocReturnsNull(void)
  */
 void test_fsm_destroy_callsFsmFree(void)
 {
-    TEST_IGNORE();
+    fsm_t *f = (fsm_t*)1;
+    
+    fsm_free_Expect(f);
+    fsm_destroy(f);
+   // TEST_IGNORE();
 }
 
 /**
