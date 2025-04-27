@@ -1,5 +1,13 @@
 name: Ceedling Testing
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+      - b3_legacy
+  pull_request:
+    branches:
+      - main
+      - b3_legacy
 jobs:
   test:
     runs-on: ubuntu-22.04
