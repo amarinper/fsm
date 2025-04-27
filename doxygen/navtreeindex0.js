@@ -31,7 +31,7 @@ var NAVTREEINDEX0 =
 "globals_func.html":[3,1,1],
 "globals_type.html":[3,1,2],
 "index.html":[],
-"index.html":[0],
+"index.html#autotoc_md0":[0],
 "md_README2.html":[1],
 "pages.html":[],
 "structfsm__t.html":[2,0,0],
