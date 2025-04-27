@@ -1,4 +1,4 @@
-![Ceedling Tests](https://github.com/amarinper/fsm/actions/workflows/ceedling-tests.yml/badge.svg)
+[![Ceedling Testing](https://github.com/amarinper/fsm/actions/workflows/ceedling-tests.yaml/badge.svg)](https://github.com/amarinper/fsm/actions/workflows/ceedling-tests.yaml)
 
 
 # `fsm`
