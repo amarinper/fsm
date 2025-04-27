@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "FSM", "index.html", [
-    [ "fsm", "index.html#autotoc_md0", null ],
+    [ "fsm", "index.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

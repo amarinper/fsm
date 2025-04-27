@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dest_5fstate_1',['dest_state',['../structfsm__trans__t.html#af125a66cfa85df848aa173961218e809',1,'fsm_trans_t']]]
+  ['current_5fstate_1',['current_state',['../structfsm__t.html#ab250e61dab922ea23423a06fd1e6ea34',1,'fsm_t']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['p_5ftt_17',['p_tt',['../structfsm__t.html#a6c3c1228679eb15c274cc8bf30c334a0',1,'fsm_t']]]
+  ['orig_5fstate_16',['orig_state',['../structfsm__trans__t.html#adc67dd348bb6fc59cb4d59d598747274',1,'fsm_trans_t']]],
+  ['out_17',['out',['../structfsm__trans__t.html#aa14b0ae2ea26e60da884d09f281f7302',1,'fsm_trans_t']]]
 ];
