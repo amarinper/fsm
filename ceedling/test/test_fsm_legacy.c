@@ -116,7 +116,7 @@ void test_fsm_nullWhenFirstDstStateIsMinusOne (void) {
  
     fsm_malloc_IgnoreAndReturn((void*)0xDEADBEEF);
  
-    //fsm_t *f = fsm_new(tt);
+    fsm_t *f = fsm_new(tt);
    
     TEST_ASSERT_NULL(f);                  
     //TEST_IGNORE();
