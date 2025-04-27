@@ -1,5 +1,10 @@
 name: Web Page
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+      - b3_legacy
+
 jobs:
   test:
     runs-on: ubuntu-22.04
