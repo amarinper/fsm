@@ -87,7 +87,7 @@ void test_fsm_init_falseWhenNullTransitions(void)
  *        y no llama a fsm_malloc si el estado de origen
  *        de la primera transición es -1 (fin de la tabla)
  */
-void test_fsm_nullWhenFirstOrigStateIsMinusOne(void) {
+void test_fsm_nullWhenFirstOrigStateIsMinusOne (void) {
   fsm_trans_t tt[] = {{-1, is_true, 1, do_nothing}};
   fsm_malloc_IgnoreAndReturn((void*)0xDEADBEEF);
   fsm_t *f = (fsm_t*)1;
