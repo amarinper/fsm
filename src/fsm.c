@@ -34,7 +34,7 @@ fsm_t *fsm_new(fsm_trans_t *p_tt)
     {
         return NULL;
     }
-
+ 
     //Se cuentan las transiciones válidas
     int num_transitions = 0;
     for (fsm_trans_t *p = p_tt; p->orig_state != -1; ++p)
@@ -45,7 +45,7 @@ fsm_t *fsm_new(fsm_trans_t *p_tt)
             return NULL;
         }
     }
-
+ 
     //Si todo bien, reservamos memoria
     fsm_t *p_fsm = (fsm_t *)fsm_malloc(sizeof(fsm_t));
     if (p_fsm != NULL)
@@ -71,7 +71,7 @@ int fsm_init(fsm_t *p_fsm, fsm_trans_t *p_tt)
     {
         return 0;
     }
-
+ 
     int num_transitions = 0;
     for (fsm_trans_t *p = p_tt; p->orig_state != -1; ++p)
     {
@@ -81,7 +81,7 @@ int fsm_init(fsm_t *p_fsm, fsm_trans_t *p_tt)
             return 0;
         }
     }
-
+ 
     p_fsm->p_tt = p_tt;
     p_fsm->current_state = p_tt->orig_state;
     return num_transitions;
@@ -103,7 +103,7 @@ int fsm_fire(fsm_t *p_fsm)
     {
         return -1;
     }
-
+ 
     int has_transitions = 0;
     for (fsm_trans_t *p_t = p_fsm->p_tt; p_t->orig_state != -1; ++p_t)
     {
@@ -116,7 +116,7 @@ int fsm_fire(fsm_t *p_fsm)
                 condition = p_t->in(p_fsm);
             }
             // Si función de guarda es NULL → siempre true
-
+ 
             if (condition)
             {
                 p_fsm->current_state = p_t->dest_state;
